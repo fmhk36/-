@@ -1,4 +1,3 @@
-# -NTTデータフィナンシャルテクノロジーのインターンシップ選考用に作成
 <!DOCTYPE html>
 <html lang="ja">
 <head>
