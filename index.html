@@ -1,1 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>好きな朝ごはんポートフォリオ</title>
+  <style>
+    /* ===== Reset ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    /* ===== Base ===== */
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* ===== Hero Section ===== */
+    #hero {
+      background-color: #fff3e0; /* 薄めのオレンジ背景 */
+      height: 40vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #333;
+    }
+
+    .hero-content {
+      background: rgba(255, 255, 255, 0.7);
+      padding: 40px;
+      border-radius: 12px;
+    }
+
+    /* ===== About Section ===== */
+    #about {
+      padding: 60px 20px;
+      background-color: #fff;
+    }
+
+    #about h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2em;
+    }
+
+    /* ===== Profile Section ===== */
+    .profile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 60px;
+      flex-wrap: wrap;
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .profile img {
+      object-fit: cover;
+      border: 6px solid #ff7043;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    /* 配置パターン */
+    .profile-center {
+      flex-direction: column;
+      text-align: center;
+    }
+    .profile-center .text {
+      margin-top: 20px;
+    }
+
+    /* サイズバリエーション */
+    .profile-center img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+
+    /* ===== Accent Box ===== */
+    .accent-light {
+      background-color: #fff3e0;
+    }
+    .accent-dark {
+      background-color: #fce4ec;
+      padding: 40px 20px;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #ff7043;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <section id="hero">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>好きな朝ごはん</h1>
+        <p>My Personal Portfolio - この3つがあればテンション上がります^^</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>メニュー紹介</h2>
+
+      <div class="profile profile-center accent-dark">
+        <img src="images/food_gohan.png" alt="白ごはん" />
+        <div class="text">
+          <h3>白ごはん</h3>
+          <p>パンより米派です。玄米は苦手なので白米がいいです。</p>
+          <p>最近の困りポイント：価格高騰</p>
+        </div>
+      </div>
+
+      <div class="profile profile-center accent-dark">
+        <img src="images/food_omisosiru.png" alt="インスタント味噌汁" />
+        <div class="text">
+          <h3>インスタント味噌汁</h3>
+          <p>お湯を入れるだけ。ホッとするので汁物は必須。お湯少な目でちょっと塩辛くするのが好きです。</p>
+          <p>好きな具：なす</p>
+        </div>
+      </div>
+
+      <div class="profile profile-center accent-dark">
+        <img src="images/food_sausage.png" alt="ウインナー" />
+        <div class="text">
+          <h3>ウインナー</h3>
+          <p>ごはんが進みます。５本くらいあるのが理想です。</p>
+          <p>好きな銘柄：シャウエッセン、香燻</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 My 朝ごはんポートフォリオ - Breakfast Supreme Edition</p>
+  </footer>
+
+  <script>
+    // JS: 画像クリックで拡大縮小
+    document.querySelectorAll(".profile img").forEach(img => {
+      img.addEventListener("click", () => {
+        img.classList.toggle("zoomed");
+      });
+    });
+
+    // CSSでzoomed用スタイル追加
+    const style = document.createElement("style");
+    style.textContent = `
+      .profile img.zoomed {
+        transform: scale(1.3);
+        transition: transform 0.3s ease;
+      }
+    `;
+    document.head.appendChild(style);
+  </script>
+</body>
+</html>
