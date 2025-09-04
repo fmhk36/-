@@ -124,7 +124,7 @@
       <h2>メニュー紹介</h2>
 
       <div class="profile profile-center accent-dark">
-        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijoejb-fdCBe2gEX2vxnBIzObsaYnbtqXE4ZXGYl2wjfsQsZt1tzSYp2wymQkccRZ6ONYeS1kbmOkT-C-fNLp4ulPvAFLb-3DwQVxQHJGr4Bd0ZgGdIDSAAiMRJzMG6Kbfz0jN2WWbVSv-/s800/food_gohan.png" alt="白ごはん" />
+        <img src="images/food_gohan.png" alt="白ごはん" />
         <div class="text">
           <h3>白ごはん</h3>
           <p>パンより米派です。玄米は苦手なので白米がいいです。</p>
@@ -133,7 +133,7 @@
       </div>
 
       <div class="profile profile-center accent-dark">
-        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoudJ7EXQWeANeX0uzQ-n8MGOU5AOn8ZDZuY8F3S8Qbz0iGyyM1fFj3OstZqgt-O8mVvtP1qsa_qMI-FS58nwtLnLBUyBFIoRshdlaAvWYM1tDnEMPHlcg2VqU3YZPIkM26lICRw78v1lF/s800/food_misoshiru.png" alt="インスタント味噌汁" />
+        <img src="images/food_omisosiru.png" alt="インスタント味噌汁" />
         <div class="text">
           <h3>インスタント味噌汁</h3>
           <p>お湯を入れるだけ。ホッとするので汁物は必須。お湯少な目でちょっと塩辛くするのが好きです。</p>
@@ -142,7 +142,7 @@
       </div>
 
       <div class="profile profile-center accent-dark">
-        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjagnGsJd9kQjL45p_XrBijEp65A5wGHK8xIahAPwUmpDB7Zo0uikHG5JhwhSb1nX_HVbS-nyUK3P30t1lmgj_uJZ6o-xwA-WYVNT5siJNTChOXU5K9dxtG21vBT8-B0xCbjqeeHxwb4No/s800/food_sausage.png" alt="ウインナー" />
+        <img src="images/food_sausage.png" alt="ウインナー" />
         <div class="text">
           <h3>ウインナー</h3>
           <p>ごはんが進みます。５本くらいあるのが理想です。</p>
